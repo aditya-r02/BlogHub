@@ -10,20 +10,12 @@ export default function HomePage(){
     const {mode, changeMode} = useContext(AppContext);
 
     return (
-        <div className='dark:bg-slate-950 bg-white'>
+        <div className='dark:bg-slate-950 bg-white w-full'>
             <NavBar/>
             <div className='h-20'></div>
             <Blogs/>
             <Footer/>
-            <div className='fixed right-16 bottom-20 dark:text-white border dark:border-gray-300 p-2 rounded-md border-gray-500
-            text-2xl cursor-pointer' onClick={changeMode}>
-            {
-                mode?
-                <span><MdLightMode/></span>
-                :
-                <span><MdDarkMode/></span>
-            }
-            </div>
+            
       </div>
     );
 }

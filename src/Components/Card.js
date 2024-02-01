@@ -4,7 +4,7 @@ export default function Card({data}){
     const arr = data.tags;
     
     return (
-        <div className="my-3 dark:text-white">
+        <div className="my-3 dark:text-white w-full">
             <NavLink to={`/Blog/${data.id}`}>
                 <h6 className="font-bold text-base">{data.title}</h6>
             </NavLink>

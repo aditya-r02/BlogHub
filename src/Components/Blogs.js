@@ -9,7 +9,7 @@ export default function Blogs(){
     
 
     return (
-        <div className="w-[550px] mx-auto pt-4 pb-12 min-h-screen
+        <div className="w-full pt-4 pb-12 min-h-screen px-2 max-w-[50rem] mx-auto
         dark:bg-slate-950">
             {
                 loading?

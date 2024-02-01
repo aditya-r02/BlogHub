@@ -17,10 +17,10 @@ export default function CategoryPage(){
     
 
     return (
-        <div className="dark:bg-slate-950 bg-white min-h-screen">
+        <div className="dark:bg-slate-950 bg-white min-h-screen w-full px-1">
             <NavBar/>
-            <div className="w-[550px] mx-auto pt-20 pb-6 
-            dark:bg-slate-950 dark:text-white">
+            <div className="w-full mx-auto pt-20 pb-6 
+            dark:bg-slate-950 dark:text-white max-w-[50rem] max-auto">
                 {
                     loading ?
                         <Loading />
@@ -38,15 +38,7 @@ export default function CategoryPage(){
 
                             
 
-                            <div className='fixed right-16 bottom-20 dark:text-white border dark:border-gray-300 p-2 rounded-md border-gray-500
-            text-2xl cursor-pointer' onClick={changeMode}>
-                                {
-                                    mode ?
-                                        <span><MdLightMode /></span>
-                                        :
-                                        <span><MdDarkMode /></span>
-                                }
-                            </div>
+                            
 
                         </div>
                 }
